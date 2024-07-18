@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="garden">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS CORP</title>
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#3b3d3d',
+                        'gradient-end': '#4f4f4f',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            scroll-padding: var(--scroll-padding, 50px);
+        }
+
+        h3 {
+            color: black;
+            -webkit-text-fill-color: white;
+            /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;   
+            font-family: sans-serif;
+        }
+    </style>
+
+<body class="font-manrope">
+    <div class="w-4/5 m-auto my-3 py-3">
+        <nav class="fixed top-0 w-4/5 m-auto ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#blog">BLOG</a></li>
+                            <li><a href="#FAQ">FAQ</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">GS CORP</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ml-56">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#blog">BLOG</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="home" class="container w-10/12 md:w-3/4 m-auto lg:w-3/4 m-auto my-48 ">
+        <div class="my-20 lg:ml-10">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
+                <div class="mx-36 ">
+                    <h1 class="text-6xl lg:text-8xl font-extrabold">
+                        We Provide <br>
+                        Supports</h1>
+                    <p class="py-6 text-sm lg:text-xl">GS Corp is a vibrant community blending camaraderie <br> with a passion for
+                        gaming and charitable activities.
+                    </p>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">
+                        Explore More
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </button>
+                </div>
+                <div class="w-4/5 m-auto">
+                    <img src="model.png" class="w-[500px]" />
+                    <!-- ratings badge -->
+                    <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-gray-700 p-5 w-60">
+                        <i class="fa-solid fa-star text-3xl text-gray-200"></i>
+                        <div class="text-gray-300">
+                            <h3 class="text-2xl">5.00</h3>
+                            <p class="text-gray-400">Community Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main id="blog" class="container mx-auto my-80">
+
+
+        <section>
+            <div class="w-10/12 md:w-3/4 m-auto lg:w-3/4 m-auto text-center">
+                <h2 class="text-4xl font-bold">Programs</h2>
+                <p class="py-5 text-sm lg:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam maxime
+                    doloribus numquam autem.</p>
+            </div>
+            <!-- this is text div Professional Program Sections is end -->
+
+            <div class="w-3/4 m-auto py-5 my-5 text-white  flex flex-wrap gap-3">
+                <!-- this is  card 1 div start  -->
+                <div class=" w-full h-[350px] text-left p-8  pt-20 lg:flex-1   " style="background-image:url('gaming.jpg');  background-repeat: no-repeat; background-position: center;
+            background-size: cover; border-radius: 20px;">
+                    <h3 class="font-bold text-white text-3xl">Gaming Night</h3>
+                    <p class="my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam maxime
+                        doloribus numquam autem.</p>
+                    <button class="bg-[#FF4240] p-3 rounded-lg font-bold">Learn More</button>
+
+                </div>
+                <!-- this is  card 2 div start  -->
+                <div class=" w-full h-[350px] p-8  pt-20  lg:flex-1  "
+                    style="background-image: url('./img/vc.webp'); background-repeat: no-repeat; background-position: center; background-size: fit; border-radius: 20px;">
+                    <h3 class="font-bold text-white text-3xl">VC Night</h3>
+                    <p class="my-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Quibusdam maxime
+                        doloribus numquam autem.</p>
+                    <button class="bg-[#FF4240] p-3 rounded-lg font-bold">Learn More</button>
+                </div>
+                <!-- this is  card 3 div start  -->
+                <div class="w-full h-[500px] p-8 pt-60  "
+                    style="background-image: url('./img/giveway.jpg'); background-repeat: no-repeat;  background-position: center; background-size: cover; border-radius: 20px;">
+                    <h3 class="font-bold text-white text-3xl">Giveway Program</h3>
+                    <p class="my-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Quibusdam maxime doloribus numquam autem.</p>
+                    <button class="bg-[#FF4240] p-3 rounded-lg font-bold">Learn More</button>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- super client section  -->
+        <section
+            class="my-24 flex flex-col lg:flex-row gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 text-gray-600 w-[90%] md:w-3/4 m-auto lg:w-3/4 m-auto">
+            <div class=" flex lg:pr-28 items-center">
+                <div class="space-y-5 text-left">
+                    <h2 class="text-5xl font-extrabold text-white ">
+                        Meet Our
+                        <br>
+                        Premeium User
+                    </h2>
+                    <p class="text-white">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                        believable.
+                    </p>
+                    <button class="btn btn-outline btn-info w-40">Show All</button>
+                </div>
+            </div>
+            <!-- review container -->
+            <div class="relative">
+                <!-- next review -->
+                <div class="relative z-10 mb-16 opacity-40 p-10 rounded-lg bg-white">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="client.png"
+                        alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img src="circles.png" alt="">
+                    </div>
+                </div>
+                <!-- current review -->
+                <div class="absolute z-20 top-40 lg:-left-24 lg:w-[430px] p-10 rounded-lg bg-white">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="client.png"
+                        alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img src="circles.png" alt="">
+                    </div>
+                </div>
+                <!-- previous review -->
+                <div class="relative z-10 opacity-40 p-10 rounded-lg bg-white">
+                    <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="client.png"
+                        alt="">
+                    <p>We are providing the best and suitable home insurance services for the people who are interested
+                        to treatment</p>
+                    <h4 class="font-bold mt-5">Ilham Yuda</h4>
+                    <p class="font-medium">Businessman</p>
+                    <div class="flex justify-end">
+                        <img src="circles.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FAQ -->
+        <section id="FAQ"
+            class="w-4/5 pt-5 m-auto my-48 text-center border-y-2 border-dashed border-white border-opacity-10">
+            <h3 class="text-5xl mb-12 font-semibold text-center">Frequently Asked <span
+                    class="text-bike-primary">Questions</span></h3>
+            <div class="hero">
+                <div class="hero-content flex-col lg:gap-24 lg:flex-row">
+                    <img src="logo.jpg" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <!-- first question -->
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                What is GS Corp?
+                            </div>
+                            <div class="collapse-content">
+                                <p>GS Corp is a community hub designed for gamers to connect, participate in
+                                    tournaments, enjoy giveaways, and engage in various gaming-related activities. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                What kind of tournaments does GS Corp host?
+                            </div>
+                            <div class="collapse-content">
+                                <p>GS Corp hosts a variety of tournaments ranging from casual to competitive across
+                                    popular gaming titles, providing opportunities for gamers of all skill levels to
+                                    compete and improve. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                How can I join GS Corp's gaming sessions?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Joining our gaming sessions is easy! Simply become a member of our community through
+                                    our website or social media channels, and you'll gain access to scheduled gaming
+                                    events and sessions.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                Does GS Corp organize giveaways?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Yes, GS Corp regularly organizes giveaways as part of our community activities. These
+                                    giveaways can include gaming hardware, in-game items, and other exciting prizes for
+                                    our members.</p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow ">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                Can I interact with gamers from around the world in GS Corp?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Absolutely! GS Corp provides a platform where you can chat and play games with fellow
+                                    gamers globally. Whether it's discussing strategies or sharing experiences, our
+                                    community encourages international interaction and friendship.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- contact -->
+        <section class="mx-auto my-4 lg:my-48">
+            <div id="contact" class="w-4/5 pt-5 m-auto my-3 lg:my-7 text-center">
+                <h2 class="text-4xl font-bold">Get In Touch</h2>
+                <p class="py-5">Fill out our online contact form. You can enter your name, email, subject, and message,
+                    and we will</p>
+            </div>
+
+            <!-- this is text div Get In Touch  is end -->
+            <div class="w-4/5 m-auto lg:mt-24">
+
+
+                <div class="my-10 lg:flex flex-initial gap-6">
+
+                    <!-- icon-box -->
+                    <div
+                        class=" p-4 lg:p-10 border rounded-2xl w-full lg:w-[45%] flex-initial items-center justify-center ">
+                        <div class="p-6 bg-[#BCED6D1A]  w-full text-left rounded-2xl">
+                            <img src="./Image/Group 1171275317.png" alt="">
+                            <p class="text-[#13131866] text-base font-normal lg:mt-6">Phone Number : </p>
+                            <h2 class=" text-sm lg:text-xl font-bold text-[#131318] ">(+91) 1234-67890</h2>
+                        </div>
+                        <div class="p-6 bg-[#FDDD5F1A] w-full text-left rounded-2xl my-6">
+                            <img src="./Image/Group 1171275318.png" alt="">
+                            <p class="text-[#13131866] text-base font-normal lg:mt-6">Email :</p>
+                            <h2 class=" text-sm lg:text-xl font-bold text-[#131318]">gaminglion@support.com </h2>
+                        </div>
+                        <div class="p-6 bg-[#629CF31A] w-full  text-left rounded-2xl">
+                            <img src="./Image/Group 1171275321.png" alt="">
+                            <p class="text-[#13131866] text-base font-normal lg:mt-6">Location : </p>
+                            <h2 class=" text-sm lg:text-xl font-bold text-[#131318]">Kolkata, India</h2>
+                        </div>
+                    </div>
+
+                    <!--this is input box div -->
+                    <div class="w-[85%] m-auto lg:w-[55%]">
+                        <div class="grid lg:grid-cols-2 gap-6">
+                            <label for="name" class="text-xl font-bold text-[#131318] text-center lg:text-left mb-6">Your Name
+                                <input
+                                    class="bg-[#13131808] p-5 text-base font-normal text-[#1313184D] rounded-xl h-16 w-full mt-4 outline-none"
+                                    type="text" name="" id="" placeholder="Enter your full name">
+                            </label>
+                            <label for="name" class="text-xl font-bold text-[#131318] text-center lg:text-left mb-6">Your Email
+                                <input
+                                    class="bg-[#13131808] p-5 text-base font-normal text-[#1313184D] rounded-xl h-16 w-full mt-4 outline-none"
+                                    type="email" name="" id="" placeholder="Enter your email address">
+                            </label>
+                            <label for="name" class="text-xl font-bold text-[#131318] text-center lg:text-left mb-6">Subject
+                                <input
+                                    class="bg-[#13131808] p-5 text-base font-normal text-[#1313184D] rounded-xl h-16 w-full mt-4 outline-none"
+                                    type="text" name="" id="" placeholder="Enter your Subject">
+                            </label>
+                            <label for="name" class="text-xl font-bold text-[#131318] text-center lg:text-left mb-6">Phone Number
+                                <input
+                                    class="bg-[#13131808] text-base font-normal p-5 text-[#1313184D] rounded-xl h-16 w-full mt-4 outline-none"
+                                    type="tel" name="" id="" placeholder="Enter your phone Number">
+                            </label>
+                        </div>
+                        <div>
+                            <label for="" class="text-xl font-bold text-[#131318] text-left mt-6">Message
+                                <textarea
+                                    class="bg-[#13131808] p-5 text-base font-normal text-[#1313184D] rounded-xl  w-full mt-4 outline-none"
+                                    name="" id="" cols="5" rows="10" placeholder="Write Your Message"></textarea>
+                            </label>
+                            <button class=" h-14  w-full mt-8 rounded-lg text-white bg-[#3b3d3d]">Send Message</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+    </main>
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+            <p class="mb-10">
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white ml-10">Join Now</button>
+            </p>
+        <div class="footer">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Contacts</span>
+                <a href="" class="link link-hover">Discord</a>
+                <a href="" class="link link-hover">Facebook</a>
+                <a href="" class="link link-hover">Github</a>
+                <a href="" class="link link-hover">Linkedin </a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+        </div>
+        <div class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by GS CORP Ltd</p>
+        </div>
+    </footer>
+</body>
+
+</html>
